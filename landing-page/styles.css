@@ -1,0 +1,429 @@
+:root {
+  --primary: #ff6a00;
+  --text-dark: #1f2a44;
+  --text-light: #6c757d;
+  --bg: #f5f7fb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef1f7, #e6e9f0);
+}
+
+/* MAIN WRAPPER */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px 60px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+}
+
+.container {
+  width: 100%;
+}
+
+/* HEADER */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.nav nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.auth a {
+  margin-right: 15px;
+  color: #555;
+  text-decoration: none;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-icon {
+  width: 35px;
+  height: 35px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO IMAGE */
+.hero-img {
+  position: relative;
+}
+
+.oval-bg {
+  width: 420px;
+  height: 480px;
+  background: #eef1f7;
+  border-radius: 50% / 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oval-bg img {
+  width: 300px;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.badge-top {
+  top: 40px;
+  left: -10px;
+}
+
+.badge-bottom {
+  bottom: 40px;
+  left: 40px;
+}
+
+/* SECTION TITLE */
+.services,
+.testimonials,
+.team {
+  margin-bottom: 100px;
+}
+
+.services h2,
+.testimonials h2,
+.team h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 35px;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* VIDEO */
+.video {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.video-text {
+  max-width: 400px;
+}
+
+.video-img {
+  position: relative;
+}
+
+.video-img img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--primary);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TESTIMONIAL */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+.testimonial {
+  padding: 20px;
+}
+
+.testi-content {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.testi-content img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+/* TEAM */
+.team-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.team-card {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.team-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* TESTIMONIAL FIX */
+/* ========================= */
+
+.testimonial-grid {
+  gap: 50px 60px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  ALIGN-ITEMS: anchor-center;
+
+}
+
+.testi-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.testi-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.testimonial span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #a0aec0;
+  margin-left: 65px;
+}
+
+/* ========================= */
+/* TEAM FIX */
+/* ========================= */
+
+.team-card {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.team-content {
+  padding: 30px;
+}
+
+.team-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-content p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #a0aec0;
+}
+
+.team-social {
+  display: flex;
+  border-top: 1px solid #eee;
+}
+
+.team-social div {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  color: #a0aec0;
+  cursor: pointer;
+}
+
+.team-social div:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.team-social div:hover {
+  color: var(--primary);
+}
+
+/* NEWSLETTER */
+.newsletter-box {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.newsletter-img {
+  width: 160px;
+}
+
+.newsletter-content {
+  max-width: 450px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe input {
+  padding: 12px;
+  flex: 1;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #ddd;
+}
+
+.subscribe button {
+  border-radius: 0 25px 25px 0;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero,
+  .cards,
+  .video,
+  .team-grid,
+  .newsletter-box {
+    flex-direction: column;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .oval-bg {
+    width: 280px;
+    height: 320px;
+  }
+
+  .oval-bg img {
+    width: 200px;
+  }
+}
